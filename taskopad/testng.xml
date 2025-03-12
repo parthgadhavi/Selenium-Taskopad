@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="taskopad" verbose="5">
+	<test name="Login">
+		<parameter name="url"
+			value="https://app.taskopad.com/auth/login" />
+		<parameter name="username" value="demo.taskopad1@gmail.com" />
+		<parameter name="password" value="Demo@2014" />
+		<classes>
+			<class name="module.login">
+				<methods>
+					<include name="launchApp" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	  <!--  <test name="profile">
+		<classes>
+			<class name="module.profile">
+				<methods>
+					<include name="profile_icon" />
+					<exclude name="edit_profile" />
+					<exclude name="change_password" />
+					<exclude name="password_negative" />
+					<exclude name="scroll_element" />
+					<exclude name="edit_billing" />
+				</methods>
+			</class>
+		</classes>
+	</test>-->
+
+	  <test name="OM">
+		<classes>
+			<class name="module.organization_management">
+				<methods>
+					<include name="Om" />
+					<include name="new_company" />
+					<exclude name="manage_member" />
+					<exclude name="delete_member" />
+					<exclude name="manage_clients" />
+					<exclude name="delete_clients" />
+					<exclude name="manage_role" />
+					<exclude name="manage_services" />
+					<exclude name="delete_services" />
+					<exclude name="manage_status" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!--  <test name="Tasks">
+		<classes>
+			<class name="module.Tasks">
+				<methods>
+					<include name="task"/>
+				</methods>
+			</class>
+		</classes>
+	</test>-->
+	
+	  <!--  <test name="Member_client">
+		<classes>
+			<class name="module.member_client">
+				<methods>
+					<include name="member" />
+					<include name="client"/>
+				</methods>
+			</class>
+		</classes>
+	</test>-->
+</suite> 
