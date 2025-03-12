@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Taskopad]" guice-stage="DEVELOPMENT" verbose="5">
+  <test thread-count="5" name="Login(failed)" verbose="5">
+    <classes>
+      <class name="module.login">
+        <methods>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- module.login -->
+    </classes>
+  </test> <!-- Login(failed) -->
+  <test thread-count="5" name="Management(failed)" verbose="5">
+    <classes>
+      <class name="module.management">
+        <methods>
+          <include name="om"/>
+          <include name="add_member"/>
+          <include name="new_company"/>
+        </methods>
+      </class> <!-- module.management -->
+    </classes>
+  </test> <!-- Management(failed) -->
+</suite> <!-- Failed suite [Taskopad] -->

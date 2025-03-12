@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Taskopad" verbose="5">
+	<test name="Login">
+		<classes>
+			<class name="module.login">
+				<methods>
+					<include name="launchApp" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Management">
+		<classes>
+			<class name="module.management">
+				<methods>
+					<include name="om" />
+					<include name="new_company" />
+					<include name="add_member"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 
